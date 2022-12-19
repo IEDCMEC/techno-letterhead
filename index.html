@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ .Campaign.Subject }}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <style>
     * {
       background-color: white;
@@ -24,79 +25,25 @@
 
     #content {
       flex: 1;
-      padding: 2% 10%;
+      padding: 3% 12%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
 
 
 <body>
-  <img id="header" class="lines" src="head.png" alt="Letter header">
+  <img id="header" class="lines" src="/uploads/head.png" alt="Letter header">
   <div id="content">
 
-
-    Respected Sir,
-    <br>
-
-    Greetings from the Innovation and Entrepreneurship Development Cell of Govt
-    Model Engineering College, Thrikkakara!
-    <br>
-
-    On behalf of the organising committee of Technopreneur 2023, I am honoured to
-    invite you as our distinguished speaker at Technopreneur 2023, the national-level
-    entrepreneurial symposium of Govt. Model Engineering College.
-    <br>
-
-    Govt. Model Engineering College (MEC) has been a centre of excellence for the last
-    32 years and has carved an elegant niche for itself among the best engineering
-    colleges across India. We take great pride in introducing you to the 12th edition of Technopreneur, the flagship
-    E-summit of the Innovation and Entrepreneurship Development Cell of our college (IEDC MEC).
-    <br>
-
-    Reaching 50,000+ people directly with a national impact, Technopreneur
-    2023 will be a national-level e-summit that includes a plethora of events including
-    Idea Pitching, Prototype Development, Hackathons, and much more. The legacy of
-    our speakers include prominent voices such as Mr. Sam Pitroda (Former Advisor
-    to PMO), Dr. K. Radhakrishnan (Former ISRO Chairman), Dr. S. Gopalakrishnan
-    (Co-founder of Infosys),<b></b> Mr. Suhas Gopinath </b>(World’s youngest CEO, Globals Inc.)
-    among others.
-    <br>
-    <br>
-
-    This year’s theme for Technopreneur is “Soaring Through Adversity”. We aim to encourage and aid students in becoming
-    efficient young entrepreneurs despite the challenges lying ahead. We believe that your valuable life experiences
-    would be immensely beneficial to our participants.
-
-    Date of event: 26th March, 2023 (tentative)
-    Venue: Le Méridien, Kochi
-    Type of Audience: College students, working professionals, startup founders, entrepreneurs and KSUM, TiE, CII
-    officials.
-
-    Our participants would be intrigued to learn more about how you came up with the concept of Zerodha, the challenges
-    you encountered in the beginning and how you successfully created a user base with very little advertising amidst a
-    lot of competition. We’d love to discover how your thought process aligned to this idea and how ‘the Nithin Kammath’
-    moulded his vision into a mega success story. Being the person who made Zerodha the top brokerage firm in India,
-    we'd love for you to speak on the topic Bootstrapping a Unicorn and Organic Growth. Having a person of your calibre
-    and stature speak at our event would be an intense distinction to our summit. It would be a great privilege to have
-    you at Technopreneur and to know more about your exciting journey.
-
-    We solicit your gracious presence at Technopreneur 2023 to make it a remarkable summit.
-    For any further queries and concerns, please feel free to contact:
-
-    Muhammed Razeen V
-    +91 9074309203
-    iedc@mec.ac.in
-
-    I appreciate your courtesy in reviewing our invitation and we very much look forward to hearing from you soon.
-    Thank you.
-
-    Yours Sincerely,
-    Muhammed Razeen V
-
-
+    {{ template "content" . }}
 
   </div>
-  <img id="footer" class="lines" src="footer.png" alt="Letter footer">
+  <img id="footer" class="lines" src="/uploads/footer.png" alt="Letter footer">
 </body>
 
 </html>
